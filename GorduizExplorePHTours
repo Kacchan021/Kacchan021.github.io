@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore PH Tours</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="logo-placeholder.png" alt="Explore PH Tours Logo" id="logo" class="Logo">
+        <img src="banner-placeholder.jpg" alt="Explore PH Tours Banner" id="banner" class="Banner">
+        <h1>Your Gateway to the Philippines!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#promos">Promos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Explore PH Tours offers the following services to make your travel unforgettable:</p>
+            <ul>
+                <li>Island Hopping Tours</li>
+                <li>Guided City Tours</li>
+                <li>Mountain Trekking Packages</li>
+                <li>Hotel and Transport Reservations</li>
+                <li>Customized Travel Itineraries</li>
+            </ul>
+        </section>
+
+        <section id="promos">
+            <h2>Special Promos</h2>
+            <p>Take advantage of our exciting promotions:</p>
+            <ul>
+                <li>"3+1 Free" group packages</li>
+                <li>20% discount on bookings made at least a month in advance</li>
+                <li>Special weekend rates for island hopping in Cebu</li>
+            </ul>
+
+            <h3>Popular Packages</h3>
+            <ul>
+                <li>Manila: Historic Intramuros Tour with Food Crawl</li>
+                <li>Cebu: Whale Shark Watching and Kawasan Falls Adventure</li>
+                <li>Davao: Mt. Apo Climbing Experience</li>
+            </ul>
+        </section>
+
+        <section id="cta">
+            <h2>Book Your Next Adventure Today!</h2>
+            <p>Explore the Philippines like never before with our exciting packages. Limited slots available for promo deals. Don't miss out!</p>
+            <button onclick="window.location.href='#contact'">Book Now</button>
+        </section>
+    </main>
+
+    <!-- Branches Section -->
+    <section id="branches">
+        <h2>Our Branches</h2>
+        <ul>
+            <li>Manila: (+63) 123-4567</li>
+            <li>Cebu: (+63) 234-5678</li>
+            <li>Davao: (+63) 345-6789</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Connect with us on social media:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+        <p>&copy; 2025 Explore PH Tours. All rights reserved.</p>
+    </footer>
+</body>
+</html>
