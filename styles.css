@@ -1,27 +1,174 @@
-.Logo {
-    width: 100px;
-    height: auto;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.Banner {
-    width: 100px;
-    height: auto;
+/* Background Video */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure it stays in the background */
 }
 
-#logo {
-    margin-top: 0px;
-    margin-bottom: 240px;
-    width: 100px;
-    height: auto;
+/* Container for content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white layer */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: relative;
+    z-index: 1; /* Ensure content is above the background video */
 }
 
-#banner {
-    margin-left: Opx;
-    margin-top: 0px;
-    width: 800px; 
-    height: auto; 
-    border: 5px solid #ccc; 
-    border-radius: 10px; 
-    overflow: hidden; 
-    object-fit: cover; 
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffd700; /* Gold color for emphasis */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffd700; /* Gold color for emphasis */
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow transition */
+}
+
+.section:hover {
+    transform: scale(1.02); /* Slightly expand the section */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add a stronger shadow on hover */
+}
+
+.section h2 {
+    border-bottom: 2px solid #ffd700; /* Gold underline for section headings */
+    padding-bottom: 5px;
+}
+
+/* Ordered List Styling */
+ol {
+    list-style-type: none; /* Remove default numbering */
+    padding: 0;
+}
+
+ol li {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for list items */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+ol li:hover {
+    background: rgba(255, 255, 255, 0.3); /* Lighter background on hover */
+}
+
+ol li a {
+    text-decoration: none;
+    color: #fff; /* White text for links */
+    font-size: 1.2rem;
+    display: block; /* Make the entire list item clickable */
+}
+
+ol li a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+/* Gallery Styling for Arts */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 200px; /* Initial height */
+    overflow: hidden; /* Hide overflow */
+    transition: max-height 0.5s ease; /* Smooth expand/collapse */
+}
+
+.gallery.expanded {
+    max-height: 1000px; /* Expanded height */
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Video Styling for YouTube and Ko-Fi Videos */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-container iframe:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Coding Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.skill:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* See All Button */
+.see-all {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    background: #ffd700;
+    color: #1e3c72;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.see-all:hover {
+    background: #ffc107; /* Lighter gold on hover */
 }

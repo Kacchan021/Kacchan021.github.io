@@ -3,14 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My First Web Page</title>
+<title>Portfolio of JM Kurt D Gorduiz</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-<h1>Hi! I am JM KURT D GORDUIZ</h1>
-<h2>HTML Tasks</h2>
-<ol>
-    <li><a href="GorduizExplorePHTours.html">Explore PH Tours</a></li>
-    <li><a href="GorduizCourseSchedule.html">2nd Term Course Schedule</a></li>
-</ol>
+    <!-- Background Video -->
+    <video autoplay loop muted id="bg-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <h1>Portfolio of JM Kurt D Gorduiz</h1>
+
+        <!-- HTML Tasks Section -->
+        <div class="section">
+            <h2>HTML Tasks</h2>
+            <ol>
+                <li><a href="GorduizExplorePHTours.html">Explore PH Tours</a></li>
+                <li><a href="GorduizCourseSchedule.html">2nd Term Course Schedule</a></li>
+            </ol>
+        </div>
+
+        <!-- Arts Section -->
+        <div class="section">
+            <h2>Arts</h2>
+            <div class="gallery">
+                <img src="Art (1).png" alt="Art 1">
+                <img src="Art (2).png" alt="Art 2">
+                <img src="Art (3).png" alt="Art 3">
+                <img src="Art (4).png" alt="Art 4">
+                <img src="Art (5).png" alt="Art 5">
+                <img src="Art (6).png" alt="Art 6">
+                <img src="Art (7).png" alt="Art 7">
+                <img src="Art (8).png" alt="Art 8">
+                <img src="Art (9).png" alt="Art 9">
+                <!-- Add more images as needed -->
+            </div>
+            <button class="see-all">See All</button>
+        </div>
+
+
+        <!-- YouTube and Ko-Fi Videos Section -->
+        <div class="section">
+            <h2>YouTube and Ko-Fi Videos</h2>
+            <select id="video-selector">
+                <option value="https://www.youtube.com/embed/uWAZxosJM0I">Video 1</option>
+                <option value="https://ko-fi.com/post/This-was-my-First-MMV-Minecraft-Music-Video-Eras-L3L81A01KC">Video 2 (Ko-Fi)</option>
+                <option value="https://ko-fi.com/post/The-Eminence-in-Shadow-AMV-VILLAIN%E1%B4%B4%E1%B4%B0-T6T01A01J9">Video 3 (Ko-Fi)</option>
+                <option value="https://www.youtube.com/embed/2x0HZtsI2tQ">Video 4</option>
+                <option value="https://www.youtube.com/embed/43prBafwyxM">Video 5</option>
+                <option value="https://www.youtube.com/embed/pii18HMFXs4">Video 6</option>
+                <option value="https://www.youtube.com/embed/qQiiNrnCa68">Video 7</option>
+            </select>
+            <div class="video-container">
+                <iframe id="selected-video" src="https://www.youtube.com/embed/uWAZxosJM0I" allowfullscreen></iframe>
+            </div>
+            <p id="kofi-message" style="display: none;">This video is hosted on Ko-Fi. <a href="#" id="kofi-link" target="_blank">Click here to view it.</a></p>
+        </div>
+
+        <!-- Coding Skills Section -->
+        <div class="section">
+            <h2>Coding Skills</h2>
+            <div class="skills-container">
+                <div class="skill">Java</div>
+                <div class="skill">Python</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">C#</div>
+                <div class="skill">Godot</div>
+                <div class="skill">Unity</div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
