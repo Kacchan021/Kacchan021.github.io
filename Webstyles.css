@@ -1,0 +1,27 @@
+.Logo {
+    width: 100px;
+    height: auto;
+}
+
+.Banner {
+    width: 100px;
+    height: auto;
+}
+
+#logo {
+    margin-top: 0px;
+    margin-bottom: 240px;
+    width: 100px;
+    height: auto;
+}
+
+#banner {
+    margin-left: Opx;
+    margin-top: 0px;
+    width: 800px; 
+    height: auto; 
+    border: 5px solid #ccc; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    object-fit: cover; 
+}
