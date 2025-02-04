@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 /* General Reset */
 * {
     margin: 0;
@@ -18,6 +19,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
     z-index: -1; /* Ensure it stays in the background */
 }
 
@@ -38,13 +40,13 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
-    color: #ffd700; /* Gold color for emphasis */
+    color: #ff00c3; /* Gold color for emphasis */
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #ffd700; /* Gold color for emphasis */
+    color: #ff00c3; /* Gold color for emphasis */
 }
 
 /* Section Styling */
@@ -62,7 +64,7 @@ h2 {
 }
 
 .section h2 {
-    border-bottom: 2px solid #ffd700; /* Gold underline for section headings */
+    border-bottom: 2px solid #ff00c3; /* Gold underline for section headings */
     padding-bottom: 5px;
 }
 
@@ -92,7 +94,7 @@ ol li a {
 }
 
 ol li a:hover {
-    color: #ffd700; /* Gold color on hover */
+    color: #ff00c3; /* Gold color on hover */
 }
 
 /* Gallery Styling for Arts */
@@ -166,7 +168,7 @@ ol li a:hover {
     display: block;
     margin: 10px auto 0;
     padding: 10px 20px;
-    background: #ffd700;
+    background: #ff00c3;
     color: #1e3c72;
     border: none;
     border-radius: 5px;
@@ -175,5 +177,5 @@ ol li a:hover {
 }
 
 .see-all:hover {
-    background: #ffc107; /* Lighter gold on hover */
+    background: #ff00c3; /* Lighter gold on hover */
 }
