@@ -1,95 +1,69 @@
 /* General Reset */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* Background Video */
 #bg-video {
+    height: 200%;
+    left: 50%;
+    object-fit: cover;
     position: fixed;
     top: 50%;
-    left: 50%;
-    width: 200%;
-    height: 200%;
-    object-fit: cover;
     transform: translate(-50%, -50%);
+    width: 200%;
     z-index: -1; /* Ensure it stays in the background */
+}
+
+/* Buttons */
+.see-all {
+    background: #ff66cc;
+    border: none;
+    border-radius: 5px;
+    color: #1e3c72;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.see-all:hover {
+    background: #ff33aa;
+}
+
+/* Coding Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #fff; /* White for clear readability */
+    padding: 10px 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.skill:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
 }
 
 /* Container for content */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
     position: relative;
     z-index: 1;
-}
-
-/* Header Styling */
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #ff66cc; /* Softer pink for readability */
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #ff66cc; /* Softer pink */
-}
-
-/* Section Styling (HTML Tasks to Projects) */
-.section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.6); /* Darker transparency for better readability */
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #e0e0e0; /* Light gray for contrast */
-}
-
-.section:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
-
-.section h2 {
-    border-bottom: 2px solid #ff66cc;
-    padding-bottom: 5px;
-}
-
-/* Ordered List Styling */
-ol {
-    list-style-type: none;
-    padding: 0;
-}
-
-ol li {
-    background: rgba(255, 255, 255, 0.15); /* Slightly lighter for distinction */
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-ol li:hover {
-    background: rgba(255, 255, 255, 0.25);
-}
-
-ol li a {
-    text-decoration: none;
-    color: #ffffff; /* White for clear readability */
-    font-size: 1.2rem;
-    display: block;
-}
-
-ol li a:hover {
-    color: #ff66cc;
 }
 
 /* Gallery Styling */
@@ -107,15 +81,78 @@ ol li a:hover {
 }
 
 .gallery img {
-    width: 100%;
-    max-width: 200px;
     border-radius: 5px;
+    max-width: 200px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Header Styling */
+h1 {
+    color: #ff66cc; /* Softer pink for readability */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff66cc;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Ordered List Styling */
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol li {
+    background: rgba(255, 255, 255, 0.15); /* Slightly lighter for distinction */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+ol li:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+ol li a {
+    color: #ffffff; /* White for clear readability */
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+ol li a:hover {
+    color: #ff66cc;
+}
+
+/* Section Styling (HTML Tasks to Projects) */
+.section {
+    background: rgba(0, 0, 0, 0.6); /* Darker transparency for better readability */
+    border-radius: 10px;
+    color: #e0e0e0; /* Light gray for contrast */
+    margin-bottom: 30px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+}
+
+.section h2 {
+    border-bottom: 2px solid #ff66cc;
+    padding-bottom: 5px;
 }
 
 /* Video Styling */
@@ -126,52 +163,15 @@ ol li a:hover {
 }
 
 .video-container iframe {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
-    border-radius: 5px;
     border: none;
+    border-radius: 5px;
+    height: 315px;
+    max-width: 560px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
 }
 
 .video-container iframe:hover {
-    transform: scale(1.02);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Coding Skills Section */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skill {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s ease, transform 0.3s ease;
-    color: #fff; /* White for clear readability */
-}
-
-.skill:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.05);
-}
-
-/* See All Button */
-.see-all {
-    display: block;
-    margin: 10px auto 0;
-    padding: 10px 20px;
-    background: #ff66cc;
-    color: #1e3c72;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-/* Hover */
-.see-all:hover {
-    background: #ff33aa;
+    transform: scale(1.02);
 }
