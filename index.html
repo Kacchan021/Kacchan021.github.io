@@ -1,88 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio of JM Kurt D Gorduiz</title>
-<link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
-<title>Portfolio of JM Kurt D Gorduiz</title>
-<link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio of JM Kurt D Gorduiz</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <!-- Background Video -->
-    <video autoplay loop muted id="bg-video">
-        <source src="background.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+  <!-- Background Video -->
+  <video autoplay loop muted id="bg-video">
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-    <div class="container">
-        <h1>Portfolio of JM Kurt D Gorduiz</h1>
+  <div class="container">
+    <h1>Portfolio of JM Kurt D Gorduiz</h1>
 
-        <!-- HTML Tasks Section -->
-        <div class="section">
-            <h2>HTML Tasks</h2>
-            <ol>
-                <li><a href="GorduizExplorePHTours.html">Explore PH Tours</a></li>
-                <li><a href="GorduizCourseSchedule.html">2nd Term Course Schedule</a></li>
-                <li><a href="javascript_exercises\index2.html">JavaScript Exercises</a></li>
-            </ol>
-        </div>
-
-        <!-- Arts Section -->
-        <div class="section">
-            <h2>Arts</h2>
-            <div class="gallery">
-                <img src="Art (1).png" alt="Art 1">
-                <img src="Art (2).png" alt="Art 2">
-                <img src="Art (3).png" alt="Art 3">
-                <img src="Art (4).png" alt="Art 4">
-                <img src="Art (5).png" alt="Art 5">
-                <img src="Art (6).png" alt="Art 6">
-                <img src="Art (7).png" alt="Art 7">
-                <img src="Art (8).png" alt="Art 8">
-                <img src="Art (9).png" alt="Art 9">
-                <!-- Add more images as needed -->
-            </div>
-            <button class="see-all">See All</button>
-        </div>
-
-
-        <!-- YouTube and Ko-Fi Videos Section -->
-        <div class="section">
-            <h2>YouTube and Ko-Fi Videos</h2>
-            <select id="video-selector">
-                <option value="https://www.youtube.com/embed/uWAZxosJM0I">Video 1</option>
-                <option value="https://ko-fi.com/post/This-was-my-First-MMV-Minecraft-Music-Video-Eras-L3L81A01KC">Video 2 (Ko-Fi)</option>
-                <option value="https://ko-fi.com/post/The-Eminence-in-Shadow-AMV-VILLAIN%E1%B4%B4%E1%B4%B0-T6T01A01J9">Video 3 (Ko-Fi)</option>
-                <option value="https://www.youtube.com/embed/2x0HZtsI2tQ">Video 4</option>
-                <option value="https://www.youtube.com/embed/43prBafwyxM">Video 5</option>
-                <option value="https://www.youtube.com/embed/pii18HMFXs4">Video 6</option>
-                <option value="https://www.youtube.com/embed/qQiiNrnCa68">Video 7</option>
-            </select>
-            <div class="video-container">
-                <iframe id="selected-video" src="https://www.youtube.com/embed/uWAZxosJM0I" allowfullscreen></iframe>
-            </div>
-            <p id="kofi-message" style="display: none;">This video is hosted on Ko-Fi. <a href="#" id="kofi-link" target="_blank">Click here to view it.</a></p>
-        </div>
-
-        <!-- Coding Skills Section -->
-        <div class="section">
-            <h2>Coding Skills</h2>
-            <div class="skills-container">
-                <div class="skill">Java</div>
-                <div class="skill">Python</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">C#</div>
-                <div class="skill">Godot</div>
-                <div class="skill">Unity</div>
-                <!-- Add more skills as needed -->
-            </div>
-        </div>
+    <!-- HTML Tasks Section -->
+    <div class="section">
+      <h2>HTML Tasks</h2>
+      <ol>
+        <li><a href="GorduizExplorePHTours.html">Explore PH Tours</a></li>
+        <li><a href="GorduizCourseSchedule.html">2nd Term Course Schedule</a></li>
+        <li><a href="javascript_exercises/index2.html">JavaScript Exercises</a></li>
+      </ol>
     </div>
 
-    
+    <!-- Arts Section -->
+    <div class="section">
+      <h2>Arts</h2>
+      <div class="gallery">
+        <img src="Art (1).png" alt="Art 1">
+        <img src="Art (2).png" alt="Art 2">
+        <img src="Art (3).png" alt="Art 3">
+        <img src="Art (4).png" alt="Art 4">
+        <img src="Art (5).png" alt="Art 5">
+        <img src="Art (6).png" alt="Art 6">
+        <img src="Art (7).png" alt="Art 7">
+        <img src="Art (8).png" alt="Art 8">
+        <img src="Art (9).png" alt="Art 9">
+        <!-- Add more images as needed -->
+      </div>
+      <button class="see-all">See All</button>
+    </div>
 
-    <!-- Link to external JavaScript file -->
-    <script src="script.js"></script>
+    <!-- YouTube and Ko-Fi Videos Section -->
+    <div class="section">
+      <h2>YouTube and Ko-Fi Videos</h2>
+      <select id="video-selector">
+        <option value="https://www.youtube.com/embed/uWAZxosJM0I">Video 1</option>
+        <option value="https://ko-fi.com/post/This-was-my-First-MMV-Minecraft-Music-Video-Eras-L3L81A01KC">Video 2 (Ko-Fi)</option>
+        <option value="https://ko-fi.com/post/The-Eminence-in-Shadow-AMV-VILLAIN%E1%B4%B4%E1%B4%B0-T6T01A01J9">Video 3 (Ko-Fi)</option>
+        <option value="https://www.youtube.com/embed/2x0HZtsI2tQ">Video 4</option>
+        <option value="https://www.youtube.com/embed/43prBafwyxM">Video 5</option>
+        <option value="https://www.youtube.com/embed/pii18HMFXs4">Video 6</option>
+        <option value="https://www.youtube.com/embed/qQiiNrnCa68">Video 7</option>
+      </select>
+      <div class="video-container">
+        <iframe id="selected-video" src="https://www.youtube.com/embed/uWAZxosJM0I" allowfullscreen></iframe>
+      </div>
+      <p id="kofi-message" style="display: none;">This video is hosted on Ko-Fi. <a href="#" id="kofi-link" target="_blank">Click here to view it.</a></p>
+    </div>
+
+    <!-- Coding Skills Section -->
+    <div class="section">
+      <h2>Coding Skills</h2>
+      <div class="skills-container">
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">C#</div>
+        <div class="skill">Godot</div>
+        <div class="skill">Unity</div>
+        <!-- Add more skills as needed -->
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section">
+        <h2>Projects</h2>
+        <div class="project">
+        <h3>Merco Distributor</h3>
+        <p>
+            <a href="https://www.youtube.com/watch?v=uIaRVKaiRPk" target="_blank">Watch the Project on YouTube</a>
+        </p>
+        <p>
+            <a href="https://github.com/Kacchan021/MercoDistributor.git" target="_blank">View the GitHub Repository</a>
+        </p>
+    
+        <!-- Merco Distributor Description -->
+        <div class="project-description">
+            <h3>Purpose & Overview:</h3>
+            <p>Merco Bakery Logistics is designed to replace Merco’s outdated pen-and-paper logistics system with a modern, database-driven web application. The purpose is to streamline operations by centralizing the management of products, inventory, deliveries, and supplier data. By automating tasks that were once done manually, the application reduces human error, speeds up order processing, and enhances data accuracy and security.</p>
+    
+            <h3>Target Users:</h3>
+            <ul>
+            <li><strong>Administrators & Managers:</strong> Overseeing inventory and logistics, generating reports, and monitoring daily stock levels.</li>
+            <li><strong>Warehouse/Delivery Staff:</strong> Inputting and updating delivery details and real-time inventory changes.</li>
+            <li><strong>Suppliers:</strong> Entering and updating supplier information for seamless coordination.</li>
+            </ul>
+    
+            <h3>Main Features:</h3>
+            <ul>
+            <li><strong>User Authentication:</strong> Secure login functionality for authorized personnel.</li>
+            <li><strong>Product Management:</strong> Registering new products and updating prices.</li>
+            <li><strong>Inventory Management:</strong> Real-time tracking of inventory using the <code>inventorydetails</code> table.</li>
+            <li><strong>Delivery Processing:</strong> Managing deliveries by recording delivery dates, employee IDs, outlet IDs, and cash transactions.</li>
+            <li><strong>Supplier Management:</strong> Recording supplier details while preventing duplicate entries.</li>
+            <li><strong>Reporting:</strong> Generating Excel reports for full inventory export using ExcelJS.</li>
+            </ul>
+    
+            <h3>Technologies & Tools:</h3>
+            <ul>
+            <li><strong>Front-End:</strong> HTML, CSS, and JavaScript for building the user interface.</li>
+            <li><strong>Back-End:</strong> Uses database-driven technology to manage inventory and reports.</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    
+  
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
